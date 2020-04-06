@@ -126,5 +126,6 @@ async function stop(
   await save(peerIdFile, enrFile, outputFile);
   await discv5.stop();
   log("Service stopped");
+  process.exit(0);
 }
 
