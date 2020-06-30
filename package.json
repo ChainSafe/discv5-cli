@@ -54,7 +54,7 @@
     "typescript": "^3.7.2"
   },
   "dependencies": {
-    "@chainsafe/discv5": "file:/home/cayman/Code/discv5",
+    "@chainsafe/discv5": "^0.2.4",
     "debug": "^4.1.1",
     "multiaddr": "^7.4.2",
     "peer-id": "^0.13.11",
