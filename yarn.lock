@@ -94,8 +94,10 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
-"@chainsafe/discv5@file:../discv5":
-  version "0.1.0"
+"@chainsafe/discv5@^0.2.4":
+  version "0.2.4"
+  resolved "https://registry.yarnpkg.com/@chainsafe/discv5/-/discv5-0.2.4.tgz#5153463a89f46b37ca8a21414aba2b6460af20a3"
+  integrity sha512-Y/13eVEIEpGdWRa3sh1fsYISoHy8/2Y1E6OtzCNt/E2oAUpYVY3Xg4F7HBLnakndD39nl1Y19cruZb3CDx+lYQ==
   dependencies:
     base64url "^3.0.1"
     bcrypto "^4.2.8"
@@ -456,10 +458,15 @@ bluebird@^3.3.0:
   resolved "https://registry.yarnpkg.com/bluebird/-/bluebird-3.7.2.tgz#9f229c15be272454ffa973ace0dbee79a1b0c36f"
   integrity sha512-XpNj6GDQzdfW+r2Wnn7xiSAd7TM3jzkxGXBGTtWKuSXv1xUV+azxAm8jdWZN06QTQk+2N2XB9jRDkvbmQmcRtg==
 
-bn.js@^4.0.0, bn.js@^4.11.1, bn.js@^4.4.0:
+bn.js@^4.0.0, bn.js@^4.4.0:
   version "4.11.8"
   resolved "https://registry.yarnpkg.com/bn.js/-/bn.js-4.11.8.tgz#2cde09eb5ee341f484746bb0309b3253b1b1442f"
   integrity sha512-ItfYfPLkWHUjckQCk8xC+LwxgK8NYcXywGigJgSwOP8Y2iyWT4f2vsZnoOXTTbo+o5yXmIUJ4gn5538SO5S3gA==
+
+bn.js@^4.11.1:
+  version "4.11.9"
+  resolved "https://registry.yarnpkg.com/bn.js/-/bn.js-4.11.9.tgz#26d556829458f9d1e81fc48952493d0ba3507828"
+  integrity sha512-E6QoYqCKZfgatHTdHzs1RRKP7ip4vvm+EyRUeE2RF0NblwVvb0p6jSVeNTOFxPn26QXN2o6SMfNxKp6kU8zQaw==
 
 body-parser@^1.16.1:
   version "1.19.0"
@@ -539,9 +546,9 @@ buffer@^5.4.3, buffer@^5.5.0:
     ieee754 "^1.1.4"
 
 bufio@~1.0.6:
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/bufio/-/bufio-1.0.6.tgz#e0eb6d70b2efcc997b6f8872173540967f90fa4d"
-  integrity sha512-mjYZFRHmI9bk3Oeexu0rWjHFY+w6hGLabdmwSFzq+EFr4MHHsNOYduDVdYl71NG5pTPL7GGzUCMk9cYuV34/Qw==
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/bufio/-/bufio-1.0.7.tgz#b7f63a1369a0829ed64cc14edf0573b3e382a33e"
+  integrity sha512-bd1dDQhiC+bEbEfg56IdBv7faWa6OipMs/AFFFvtFnB3wAYjlwQpQRZ0pm6ZkgtfL0pILRXhKxOiQj6UzoMR7A==
 
 bytes@3.1.0:
   version "3.1.0"
@@ -1802,7 +1809,25 @@ libp2p-crypto-secp256k1@^0.4.2:
     multihashing-async "^0.8.1"
     secp256k1 "^4.0.0"
 
-libp2p-crypto@^0.17.5, libp2p-crypto@~0.17.3:
+libp2p-crypto@^0.17.5:
+  version "0.17.7"
+  resolved "https://registry.yarnpkg.com/libp2p-crypto/-/libp2p-crypto-0.17.7.tgz#1a5875cbed1d0d4fa7860ea15951a769308308de"
+  integrity sha512-z5Vkser8oGKsF8MAWovmXtFnEG7PqsgxrIgdSDejs2N6X+g3hUKFtxL/sKZpWD3tlLywcH9wqoE9L096ExB1lA==
+  dependencies:
+    buffer "^5.5.0"
+    err-code "^2.0.0"
+    is-typedarray "^1.0.0"
+    iso-random-stream "^1.1.0"
+    keypair "^1.0.1"
+    multibase "^0.7.0"
+    multihashing-async "^0.8.1"
+    node-forge "^0.9.1"
+    pem-jwk "^2.0.0"
+    protons "^1.0.1"
+    secp256k1 "^4.0.0"
+    ursa-optional "~0.10.1"
+
+libp2p-crypto@~0.17.3:
   version "0.17.5"
   resolved "https://registry.yarnpkg.com/libp2p-crypto/-/libp2p-crypto-0.17.5.tgz#e7781139530edf217ad90eb06942b84ddebf7df1"
   integrity sha512-pvGKdxY9CvdsaFNFi8xz42CQ2XesAeLNMlsiPI1M1bopMJxHtNPy5HvEInvHL/bODTJn6SrKICbKsQ7bddMXpg==
@@ -2107,7 +2132,7 @@ node-environment-flags@1.0.5:
     object.getownpropertydescriptors "^2.0.3"
     semver "^5.7.0"
 
-node-forge@~0.9.1:
+node-forge@^0.9.1, node-forge@~0.9.1:
   version "0.9.1"
   resolved "https://registry.yarnpkg.com/node-forge/-/node-forge-0.9.1.tgz#775368e6846558ab6676858a4d8c6e8d16c677b5"
   integrity sha512-G6RlQt5Sb4GMBzXvhfkeFmbqR6MzhtnT7VTHuLadjkii3rdYHNdw0m8zA4BTxVIh68FicCQ2NSUANpsqkr9jvQ==
@@ -2574,9 +2599,9 @@ rimraf@^2.6.0, rimraf@^2.6.2, rimraf@^2.6.3:
     glob "^7.1.3"
 
 rlp@^2.2.4:
-  version "2.2.4"
-  resolved "https://registry.yarnpkg.com/rlp/-/rlp-2.2.4.tgz#d6b0e1659e9285fc509a5d169a9bd06f704951c1"
-  integrity sha512-fdq2yYCWpAQBhwkZv+Z8o/Z4sPmYm1CUq6P7n6lVTOdb949CnqA0sndXal5C1NleSVSZm6q5F3iEbauyVln/iw==
+  version "2.2.5"
+  resolved "https://registry.yarnpkg.com/rlp/-/rlp-2.2.5.tgz#b0577b763e909f21a9dea31b4b235b2393f15ef1"
+  integrity sha512-y1QxTQOp0OZnjn19FxBmped4p+BSKPHwGndaqrESseyd2xXZtcgR3yuTIosh8CaMaOii9SKIYerBXnV/CpJ3qw==
   dependencies:
     bn.js "^4.11.1"
 
