@@ -1,5 +1,8 @@
 # discv5-cli
 
+![ES Version](https://img.shields.io/badge/ES-2020-yellow)
+![Node Version](https://img.shields.io/badge/node-12.x-green)
+
 CLI wrapper around [`@chainsafe/discv5`](https://github.com/chainsafe/discv5)
 
 ## Usage
