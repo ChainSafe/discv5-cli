@@ -24,7 +24,7 @@ export function readEnr(enrFile: string): ENR {
 }
 
 export function writeEnr(enrFile: string, enr: ENR, peerId: PeerId): void {
-  return fs.writeFileSync(enrFile, enr.encodeTxt(peerId.privKey.marshal()));
+  return fs.writeFileSync(enrFile, enr.encodeTxt(new Buffer(peerId.privKey.marshal())));
 }
 
 export function readEnrs(filename: string): ENR[] {

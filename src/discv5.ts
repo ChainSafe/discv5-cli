@@ -83,7 +83,7 @@ async function init(
   const bootstrapEnrs = readEnrs(bootstrapEnrsFile);
   const bindAddress = getBindAddress(bindAddressString);
 
-  discv5 = Discv5.create(localEnr, peerId, bindAddress);
+  discv5 = Discv5.create({enr: localEnr, peerId, multiaddr: bindAddress});
   bootstrapEnrs.forEach((enr) => {
     log("Adding bootstrap enr: %s", enr.encodeTxt());
     discv5.addEnr(enr);
